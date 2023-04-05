@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@100&family=Poppins:wght@100;300&family=Tilt+Warp&family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Poppins:wght@100;300&family=Tilt+Warp&family=Ubuntu:ital@1&display=swap');
+
+header {
+    background-color: #82541E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    gap: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    background-image: url("../assets/Img/fondo.jpeg");
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    object-fit: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    min-height: calc(100vh - 100px);
+    padding-bottom: 30px;
+}
+
+.leyenda {
+    display: flex;
+    padding-top: 150px;
+    padding-right: 300px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tith {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.leyenda p {
+    font-size: 30px;
+    color: white;
+}
+
+.texto {
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #82541E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pie {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/*****************************-CSS DE "NOSOTROS"-*****************************/
+
+.leye1 {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.hist {
+    text-align: center;
+    font-size: 30;
+    color: white;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro1 {
+    background-color: rgba(37, 33, 33, 0.614);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.leye2 {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    padding-left: 10px;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.intro2 {
+    background-color: rgba(37, 33, 33, 0.614);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navi {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leye1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prueba {
+        width: 100%;
+        float: none;
+    }
+
+    .intro2 {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 460px) {
+
+
+
+    .leye2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ami {
+        width: 100%;
+        float: none;
+    }
+
+    .intro2 {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+
+/*****************************-CSS DE "MENU"-*****************************
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.detalle {
+    background-color: rgba(94, 70, 70, 0.352);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+    color: white;
+
+}
+
+.img1 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.txt1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img2 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.txt2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img3 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.txt3 {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+*/
+
+/*****************************-CSS DE "CONTACTO"-*****************************/
+
+.men {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.men2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.texto1 {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    margin-top: 30px;
+}
+
+.texto2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.texto3 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .men{
+        margin-top: 20px;
+    }
+
+    .men2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ .tel{
+    margin-top: 40px;
+    margin-bottom: 10px;
+ }
+
+.wp{
+    margin-bottom: 10px;
+}
+
+}
+/*****************************-CSS DE "DIRECCIÓN"-*****************************/
+
+.cont {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.detail {
+    font-size: 20px;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.first {
+    text-align: right;
+    padding-bottom: 20px;
+    margin-right: 200px;
+}
+
+.sec {
+    text-align: right;
+    padding-bottom: 20px;
+    margin-right: 200px;
+}
